@@ -8,7 +8,7 @@ const port = 3000;
 // Replace 'mongodb-service' and 'your-database-name' with your actual values
 //const mongoURI = 'mongodb://mongodb-service:27017/your-database-name';
 
-const mongoURI = 'mongodb://localhost:27017/admin';
+const mongoURI = 'mongodb://mongodb-service:27017/admin';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
